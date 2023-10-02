@@ -4,12 +4,16 @@ Infeedo Task API in NodeJS
 This is a NodeJs project which can be used to add task, update task, get all tasks in created and task metrics in a specific timeline.
 
 1) Create a new task.
+
 API POST: http://localhost:8080/createTask
+
 payload: 
+
 {
     "title": "Infeedo test",
     "status": "open"
 }
+
 Response:
 {
     "success": true,
@@ -20,11 +24,14 @@ Response:
 2) Update an existing task.
 
 API PUT: http://localhost:8080/updateTask
+
 payload:
+
 {
     "title": "Task 9",
     "status": "completed"
 }
+
 Response:
 {
     "success": true,
@@ -32,7 +39,9 @@ Response:
 }
 
 3) Get all tasks
+
 API GET: http://localhost:8080/getAllTasks
+
 Response:
 [
     {
@@ -98,8 +107,11 @@ Response:
 ]
 
 4) Get task metrics according to status and specified timeline
+
 API GET: http://localhost:8080/getTaskMetrics?status=open&startDate=2023-08-10&endDate=2023-10-02
+
 params: status, startDate, endDate
+
 Response:
 {
     "start_date": " 2023-10-01",
