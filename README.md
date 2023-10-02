@@ -1,5 +1,5 @@
 # Task List APIs
-Infeedo Task API in NodeJS
+Task API in NodeJS
 
 This is a NodeJs project which can be used to add task, update task, get all tasks in created and task metrics in a specific timeline.
 
