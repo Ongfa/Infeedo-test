@@ -96,7 +96,7 @@ process.on('SIGINT', () => {
     console.log('Closing MySQL connection...');
 
     // Close the MySQL connection
-    connection.end((err) => {
+    this.connection.end((err) => {
         if (err) {
             console.error('Error closing MySQL connection:', err);
         } else {
